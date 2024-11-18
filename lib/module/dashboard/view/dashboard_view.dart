@@ -26,6 +26,7 @@ class DashboardView extends StatefulWidget {
           Padding(
             padding: EdgeInsets.all(15.0),
             child: Badge(
+              backgroundColor: Colors.blue,
               label: Text(
                 "4",
                 style: TextStyle(
@@ -175,7 +176,7 @@ class DashboardView extends StatefulWidget {
                                   decoration: BoxDecoration(
                                     color: (controller.qtyAdult == 0)
                                         ? const Color(0xffdedede)
-                                        : const Color(0xfffdc620),
+                                        : const Color(0xff87cefa),
                                   ),
                                   child: const Icon(
                                     Icons.remove,
@@ -198,7 +199,7 @@ class DashboardView extends StatefulWidget {
                                     left: 20.0,
                                   ),
                                   decoration: const BoxDecoration(
-                                    color: Color(0xfffdc620),
+                                    color: Color(0xff87cefa),
                                   ),
                                   child: const Icon(
                                     Icons.add,
@@ -220,7 +221,7 @@ class DashboardView extends StatefulWidget {
                                   decoration: BoxDecoration(
                                     color: (controller.qtyChild == 0)
                                         ? const Color(0xffdedede)
-                                        : const Color(0xfffdc620),
+                                        : const Color(0xff87cefa),
                                   ),
                                   child: const Icon(
                                     Icons.remove,
@@ -243,7 +244,7 @@ class DashboardView extends StatefulWidget {
                                     left: 20.0,
                                   ),
                                   decoration: const BoxDecoration(
-                                    color: Color(0xfffdc620),
+                                    color: Color(0xff87cefa),
                                   ),
                                   child: const Icon(
                                     Icons.add,
@@ -286,7 +287,7 @@ class DashboardView extends StatefulWidget {
                         width: MediaQuery.of(context).size.width,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xfffdc620),
+                            backgroundColor: const Color(0xff87cefa),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
                             ),
@@ -297,6 +298,7 @@ class DashboardView extends StatefulWidget {
                             style: TextStyle(
                               color: Color(0xff383d47),
                               fontSize: 16,
+                              fontWeight: FontWeight.bold
                             ),
                           ),
                         ),
